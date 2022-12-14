@@ -1,0 +1,21 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+li{
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 768px){
+    ul{
+        flex-direction: row;
+    }
+}
