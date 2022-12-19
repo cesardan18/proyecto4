@@ -14,245 +14,247 @@
     <link rel="icon" type="image/x-icon" href="/img/carga.png"> <!--Icono al costado del título de la página-->
 </head>
 <body>
-    <header>
-        <nav>
-            <!--Logo del Menú-->
-            <div class="cont-logo">
-                <a href="#inicio"><img src="/img/logomax.png" alt=""></a>
+    <div class="contenedor">
+        <header>
+            <nav>
+                <!--Logo del Menú-->
+                <div class="cont-logo">
+                    <a href="#inicio"><img src="/img/logomax.png" alt=""></a>
+                </div>
+                <!---->
+    
+                <!--Contenedor de navegación de la página-->
+                <div class="cont-nav">
+                    <ul class="menu">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobremi">Sobre Mí</a></li>
+                        <li><a href="#servicios">Servicios</a>
+                            <!--Submenú de la página-->
+                            <ul class="submenu">
+                                <li><a href="#servicios">Diseño de Página</a></li>
+                                <li><a href="#servicios">Asesoría</a></li>
+                            </ul>
+                            <!---->
+                        </li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contactame">Contactame</a></li>
+                    </ul>
+                </div>
+                <!---->
+            </nav>
+        </header>
+    
+        <main>
+            <!--Inicio de la página-->
+            <div class="inicio">
+                <div class="txt-inicio">
+                    <h1>PROGRAMADOR</h1>
+                    <p>Convierto tu sueño en código</p>
+                </div>
             </div>
             <!---->
-
-            <!--Contenedor de navegación de la página-->
-            <div class="cont-nav">
-                <ul class="menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#sobremi">Sobre Mí</a></li>
-                    <li><a href="#servicios">Servicios</a>
-                        <!--Submenú de la página-->
-                        <ul class="submenu">
-                            <li><a href="#servicios">Diseño de Página</a></li>
-                            <li><a href="#servicios">Asesoría</a></li>
-                        </ul>
-                        <!---->
-                    </li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contactame">Contactame</a></li>
-                </ul>
+        </main>
+    
+        <!--Sección Sobre Mí de la página-->
+        <section id="sobremi">
+            <div class="grupo-sobremi"> <!--Quizás se pregunte porque hay muchos divs, lo use para acomodar la página ya que sin ellos se desacomodaba-->
+                <div class="cont-sobremi">
+                    <div class="img-sobremi">
+                        <img src="/img/sobremi.png" alt="">
+                    </div>
+                    <div class="txt-sobremi">
+                        <h2>Hola, Soy Cesar Daniel</h2>
+                        <p>Soy estudiante de Zegel Ipae, actualmente estoy cursando la carrera de Gestion de Sistemas de Información para convertirme en un gran programador capaz de crear páginas y programas solicitados, que faciliten la vida a las personas, con un gran diseño atractivo.</p>
+                    </div>
+                </div>
             </div>
-            <!---->
-        </nav>
-    </header>
-
-    <main>
-        <!--Inicio de la página-->
-        <div class="inicio">
-            <div class="txt-inicio">
-                <h1>PROGRAMADOR</h1>
-                <p>Convierto tu sueño en código</p>
-            </div>
-        </div>
+        </section>
         <!---->
-    </main>
-
-    <!--Sección Sobre Mí de la página-->
-    <section id="sobremi">
-        <div class="grupo-sobremi"> <!--Quizás se pregunte porque hay muchos divs, lo use para acomodar la página ya que sin ellos se desacomodaba-->
-            <div class="cont-sobremi">
-                <div class="img-sobremi">
-                    <img src="/img/sobremi.jpg" alt="">
-                </div>
-                <div class="txt-sobremi">
-                    <h2>Hola, Soy Cesar Daniel</h2>
-                    <p>Soy estudiante de Zegel Ipae, actualmente estoy cursando la carrera de Gestion de Sistemas de Información para convertirme en un gran programador capaz de crear páginas y programas solicitados, que faciliten la vida a las personas, con un gran diseño atractivo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!---->
-
-    <!--Sección Servicios de la página-->
-    <section id="servicios">
-        <div class="grupo-servicios">
-            <div class="sup-servicios">
-                <h2>Servicios que puedo ofrecerte...</h2>
-            </div>
     
-            <div class="cont-servicios">
-                <!--Servicio 1-->
-                <div>
-                    <a href="https://www.zegelipae.edu.pe/"><img src="/img/diseñoweb.webp" alt=""></a> <!--La mayoría de links dirigen hacía la página de Zegel porque todavía no cuento con los links de los elementos que agregue-->
-                    <h3>Diseño de Página</h3>
-                    <p>Diseñare tu página web para atraer las miradas de clientes, mientras tu le dedicas tiempo a tu negocio.</p>
+        <!--Sección Servicios de la página-->
+        <section id="servicios">
+            <div class="grupo-servicios">
+                <div class="sup-servicios">
+                    <h2>Servicios que puedo ofrecerte...</h2>
                 </div>
-                <!---->
-
-                <!--Servicio 2-->
-                <div>
-                    <a href="https://www.zegelipae.edu.pe/"><img src="/img/asesoría.jpg" alt=""></a>
-                    <h3>Asesoría</h3>
-                    <p>Te ayudo con las dudas que tengas sobre programación, para desarrollar tu proyecto de mejor manera.</p>
-                </div>
-                <!---->
-            </div>
-        </div>
-    </section>
-    <!---->
-
-    <!--Sección Proyectos de la página-->
-    <section id="proyectos">
-        <div class="grupo-proyectos">
-            <div class="sup-proyectos">
-                <h2>Proyectos realizados por mí...</h2>
-            </div>
-    
-            <div class="cont-proyectos"> <!--Use como proyectos algunas páginas que realizamos en clase-->
-                <!--Proyecto 1-->
-                <div>
-                    <h3>Mi tienda Gaming</h3>
-                    <a href="https://www.zegelipae.edu.pe/"><img src="/img/proyecto1.jpg" alt=""></a>
-                    <p>Página web creada a partir de Html y CSS, enfocada en la venta de accesorios gamings, cuenta con 3 apartados a excepcion del inicio, cada uno con un contenido diferente.</p>
-                    <div class="cont-boton">
-                        <a href="https://www.zegelipae.edu.pe/"><button class="boton-proyectos">Visitar la Página</button></a> <!--Le agregue la etiqueta <a href> a los buttons para darles más funcionalidad-->
+        
+                <div class="cont-servicios">
+                    <!--Servicio 1-->
+                    <div>
+                        <a href="https://www.zegelipae.edu.pe/"><img src="/img/diseñoweb.webp" alt=""></a> <!--La mayoría de links dirigen hacía la página de Zegel porque todavía no cuento con los links de los elementos que agregue-->
+                        <h3>Diseño de Página</h3>
+                        <p>Diseñare tu página web para atraer las miradas de clientes, mientras tu le dedicas tiempo a tu negocio.</p>
                     </div>
-                </div>
-                <!---->
-
-                <!--Proyecto 2-->
-                <div>
-                    <h3>Tienda de Pecanas</h3>
-                    <a href="https://www.zegelipae.edu.pe/"><img src="/img/proyecto2.jpg" alt=""></a>
-                    <p>Página web creada a partir de Html y CSS, enfocada en la venta de Pecanas, diferentes apartados ofreciendo diferentes productos y beneficios para los compradores.</p>
-                    <div class="cont-boton">
-                        <a href="https://www.zegelipae.edu.pe/"><button class="boton-proyectos">Visitar la Página</button></a>
+                    <!---->
+    
+                    <!--Servicio 2-->
+                    <div>
+                        <a href="https://www.zegelipae.edu.pe/"><img src="/img/asesoría.jpg" alt=""></a>
+                        <h3>Asesoría</h3>
+                        <p>Te ayudo con las dudas que tengas sobre programación, para desarrollar tu proyecto de mejor manera.</p>
                     </div>
+                    <!---->
                 </div>
-                <!---->
-
-                <!--Proyect 3-->
-                <div>
-                    <h3>Formulario</h3>
-                    <a href="https://www.zegelipae.edu.pe/"><img src="/img/proyecto3.jpg" alt=""></a>
-                    <p>Formulario creado a partir de Html y CSS, que permite al usuario completar la información requerida como también marcar y seleccionar dependiendo el caso.</p>
-                    <div class="cont-boton">
-                        <a href="https://www.zegelipae.edu.pe/"><button class="boton-proyectos">Visitar la Página</button></a>
+            </div>
+        </section>
+        <!---->
+    
+        <!--Sección Proyectos de la página-->
+        <section id="proyectos">
+            <div class="grupo-proyectos">
+                <div class="sup-proyectos">
+                    <h2>Proyectos realizados por mí...</h2>
+                </div>
+        
+                <div class="cont-proyectos"> <!--Use como proyectos algunas páginas que realizamos en clase-->
+                    <!--Proyecto 1-->
+                    <div>
+                        <h3>Mi tienda Gaming</h3>
+                        <a href="https://www.zegelipae.edu.pe/"><img src="/img/proyecto1.jpg" alt=""></a>
+                        <p>Página web creada a partir de Html y CSS, enfocada en la venta de accesorios gamings, cuenta con 3 apartados a excepcion del inicio, cada uno con un contenido diferente.</p>
+                        <div class="cont-boton">
+                            <a href="https://www.zegelipae.edu.pe/"><button class="boton-proyectos">Visitar la Página</button></a> <!--Le agregue la etiqueta <a href> a los buttons para darles más funcionalidad-->
+                        </div>
                     </div>
+                    <!---->
+    
+                    <!--Proyecto 2-->
+                    <div>
+                        <h3>Tienda de Pecanas</h3>
+                        <a href="https://www.zegelipae.edu.pe/"><img src="/img/proyecto2.jpg" alt=""></a>
+                        <p>Página web creada a partir de Html y CSS, enfocada en la venta de Pecanas, diferentes apartados ofreciendo diferentes productos y beneficios para los compradores.</p>
+                        <div class="cont-boton">
+                            <a href="https://www.zegelipae.edu.pe/"><button class="boton-proyectos">Visitar la Página</button></a>
+                        </div>
+                    </div>
+                    <!---->
+    
+                    <!--Proyect 3-->
+                    <div>
+                        <h3>Formulario</h3>
+                        <a href="https://www.zegelipae.edu.pe/"><img src="/img/proyecto3.jpg" alt=""></a>
+                        <p>Formulario creado a partir de Html y CSS, que permite al usuario completar la información requerida como también marcar y seleccionar dependiendo el caso.</p>
+                        <div class="cont-boton">
+                            <a href="https://www.zegelipae.edu.pe/"><button class="boton-proyectos">Visitar la Página</button></a>
+                        </div>
+                    </div>
+                    <!---->
                 </div>
-                <!---->
             </div>
-        </div>
-    </section>
-    <!---->
-
-    <!--Sección Contactame de la página-->
-    <section id="contactame">
-        <div class="grupo-contactame">
-            <div class="sup-contactame">
-                <h2>Contactese conmigo</h2>
-            </div>
-            <div class="cont-contactame">
-                <!--Formulario-->
-                <form action="">
-                    <fieldset>
-                        <legend>Complete los espacios</legend>
-                        <!--Inputs de tipo "text"-->
-                        <div class="cont-form">
-                            <label for="nombre">Nombres y Apellidos*</label>
-                            <input autocomplete="off" type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres">
-                        </div>
+        </section>
+        <!---->
     
-                        <div class="cont-form">
-                            <label for="correo">Correo Electrónico*</label>
-                            <input type="text" id="correo" name="correo" placeholder="Ingrese su correo electrónico">
-                        </div>
-    
-                        <div class="cont-form">
-                            <label for="sitio">Sitio web de tu negocio*</label>
-                            <input type="text" id="sitio" name="sitio" placeholder="Ingrese el url del sitio web">
-                        </div>
-                        <!---->
-
-                        <!--Inputs de tipo "areatxt"-->
-                        <div class="cont-form">
-                            <label for="areatxt">Cuentame sobre tu negocio y lo que crees que necesita*</label>
-                            <textarea name="areatxt" id="areatxt"></textarea>
-                        </div>
-                        <!---->
-    
-                        <div class="cont-elegir">
-                            <!--Elección única de opciones-->
-                            <p>¿Qué servicio le interesa?</p>
-                            <div>
-                                <input type="radio" id="diseño" name="opcion" value="diseño">
-                                <label for="diseño">Diseño de Página</label>
+        <!--Sección Contactame de la página-->
+        <section id="contactame">
+            <div class="grupo-contactame">
+                <div class="sup-contactame">
+                    <h2>Contactese conmigo</h2>
+                </div>
+                <div class="cont-contactame">
+                    <!--Formulario-->
+                    <form action="">
+                        <fieldset>
+                            <legend>Complete los espacios</legend>
+                            <!--Inputs de tipo "text"-->
+                            <div class="cont-form">
+                                <label for="nombre">Nombres y Apellidos*</label>
+                                <input autocomplete="off" type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres">
                             </div>
-    
-                            <div>
-                                <input type="radio" id="asesoria" name="opcion" value="asesoria">
-                                <label for="asesoria">Asesoría</label>
+        
+                            <div class="cont-form">
+                                <label for="correo">Correo Electrónico*</label>
+                                <input type="text" id="correo" name="correo" placeholder="Ingrese su correo electrónico">
                             </div>
-    
-                            <div>
-                                <input type="radio" id="ambas" name="opcion" value="ambas">
-                                <label for="ambas">Ambas</label>
+        
+                            <div class="cont-form">
+                                <label for="sitio">Sitio web de tu negocio*</label>
+                                <input type="text" id="sitio" name="sitio" placeholder="Ingrese el url del sitio web">
                             </div>
                             <!---->
-                        </div>
-                        
-                        <!--Input de tipo "submit"-->
-                        <div class="button-form">
-                            <a href="https://www.zegelipae.edu.pe/"><input type="submit" value="Enviar" class="button"></a> <!--Aquí tmbn use la etiqueta <a href> para el input de tipo "submit"-->
-                        </div>
-                        <!---->
-                    </fieldset>
-                </form>
-                <!---->
-            </div>
-        </div>
-    </section>
-    <!---->
-
-    <!--Footer de la página-->
-    <footer>
-        <!--Parte superior del footer-->
-        <div class="superior">
-            <!--Apartado de Sígueme - Redes sociales-->
-            <div class="sigueme">
-                <h3>Sígueme</h3>
-                <div>
-                    <a href="https://www.facebook.com/"><img src="/img/facebook.webp" alt=""></a>
-                    <a href="https://www.instagram.com/"><img src="/img/instagram.webp" alt=""></a>
-                    <a href="https://www.whatsapp.com/"><img src="/img/whatsapp.png" alt=""></a>
+    
+                            <!--Inputs de tipo "areatxt"-->
+                            <div class="cont-form">
+                                <label for="areatxt">Cuentame sobre tu negocio y lo que crees que necesita*</label>
+                                <textarea name="areatxt" id="areatxt"></textarea>
+                            </div>
+                            <!---->
+        
+                            <div class="cont-elegir">
+                                <!--Elección única de opciones-->
+                                <p>¿Qué servicio le interesa?</p>
+                                <div>
+                                    <input type="radio" id="diseño" name="opcion" value="diseño">
+                                    <label for="diseño">Diseño de Página</label>
+                                </div>
+        
+                                <div>
+                                    <input type="radio" id="asesoria" name="opcion" value="asesoria">
+                                    <label for="asesoria">Asesoría</label>
+                                </div>
+        
+                                <div>
+                                    <input type="radio" id="ambas" name="opcion" value="ambas">
+                                    <label for="ambas">Ambas</label>
+                                </div>
+                                <!---->
+                            </div>
+                            
+                            <!--Input de tipo "submit"-->
+                            <div class="button-form">
+                                <a href="https://www.zegelipae.edu.pe/"><input type="submit" value="Enviar" class="button"></a> <!--Aquí tmbn use la etiqueta <a href> para el input de tipo "submit"-->
+                            </div>
+                            <!---->
+                        </fieldset>
+                    </form>
+                    <!---->
                 </div>
             </div>
-            <!---->
-        </div>
+        </section>
         <!---->
-
-        <!--Parte media del footer-->
-        <div class="mitad">
-            <!--Agregados de apoyo para el usuario-->
-            <div>
-                <h3>Contacto</h3>
-                <p>info@soydaniel.com</p>
-            </div>
-            <div>
-                <h3>Preguntas</h3>
-                <a href="https://www.zegelipae.edu.pe/">Preguntas sobre los servicios</a>
-            </div>
-            <!---->
-        </div>
-        <!---->
-
-        <!--Parte inferior del footer-->
-        <div class="inferior">
-            <!--Políticas de la página - Tienen de enlace el sitio de la página de Zegel porque todavía no tengo el link de estos apartados-->
-            <div>
-                <a href="https://www.zegelipae.edu.pe/">POLÍTICA DE PRIVACIDAD</a> II <a href="https://www.zegelipae.edu.pe/">POLÍTICA DE COOKIES</a> II <a href="https://www.zegelipae.edu.pe/">AVISO LEGAL</a>          
+    
+        <!--Footer de la página-->
+        <footer>
+            <!--Parte superior del footer-->
+            <div class="superior">
+                <!--Apartado de Sígueme - Redes sociales-->
+                <div class="sigueme">
+                    <h3>Sígueme</h3>
+                    <div>
+                        <a href="https://www.facebook.com/"><img src="/img/facebook.webp" alt=""></a>
+                        <a href="https://www.instagram.com/"><img src="/img/instagram.webp" alt=""></a>
+                        <a href="https://www.whatsapp.com/"><img src="/img/whatsapp.png" alt=""></a>
+                    </div>
+                </div>
+                <!---->
             </div>
             <!---->
-        </div>
+    
+            <!--Parte media del footer-->
+            <div class="mitad">
+                <!--Agregados de apoyo para el usuario-->
+                <div>
+                    <h3>Contacto</h3>
+                    <p>info@soydaniel.com</p>
+                </div>
+                <div>
+                    <h3>Preguntas</h3>
+                    <a href="https://www.zegelipae.edu.pe/">Preguntas sobre los servicios</a>
+                </div>
+                <!---->
+            </div>
+            <!---->
+    
+            <!--Parte inferior del footer-->
+            <div class="inferior">
+                <!--Políticas de la página - Tienen de enlace el sitio de la página de Zegel porque todavía no tengo el link de estos apartados-->
+                <div>
+                    <a href="https://www.zegelipae.edu.pe/">POLÍTICA DE PRIVACIDAD</a> II <a href="https://www.zegelipae.edu.pe/">POLÍTICA DE COOKIES</a> II <a href="https://www.zegelipae.edu.pe/">AVISO LEGAL</a>          
+                </div>
+                <!---->
+            </div>
+            <!---->
+        </footer>
         <!---->
-    </footer>
-    <!---->
+    </div>
 </body>
 </html>

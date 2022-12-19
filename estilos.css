@@ -5,12 +5,16 @@
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+.contenedor{
+    width: 100%;
 }
 
 /*MENÚ*/
 header{
     width: 100%;
-    height: 65px;
+    height: 4rem;
 }
 nav{
     width: 100%;
@@ -19,15 +23,16 @@ nav{
     display: flex;
     justify-content: space-between; /*Ordena los elementos al principio, centro y final del contenedor flex*/
     align-items: center; /*Ordena los elementos de manera vertical central*/
+    box-sizing: border-box;
 }
 .cont-logo img{
-    width: 80px;
-    height: 50px;
-    padding: 10px;
+    width: 5rem;
+    height: 3rem;
+    padding: 0.6rem;
 }
 .cont-nav{
     font-size: 20px;
-    padding-right: 20px;
+    padding-right: 1.25em;
 }
 .menu{
     list-style: none;
@@ -36,19 +41,20 @@ nav{
 .menu > li > a{
     display: block;
     text-align: center;
-    padding: 20px 20px;
+    padding: 1.25rem 1.25rem;
     color: rgb(159, 159, 159);
     text-decoration: none;
 }
 .menu > li > a:hover{
     color: black;
+    background-color: rgb(159, 159, 159);
 }
 
 .submenu{ /*Submenú*/
     position: absolute;
     display: none; /*Para que se oculte*/
     list-style: none;
-    width: 190px;
+    width: 11.87rem;
     background-color: whitesmoke;
 }
 .menu li:hover .submenu{
@@ -57,15 +63,20 @@ nav{
 .submenu li a{
     display: block;
     color: rgb(159, 159, 159);
-    padding: 14px 16px;
+    padding: 0.87rem 1rem;
     text-decoration: none;
 }
 .submenu li > a:hover{
     color: black;
+    background-color: rgb(159, 159, 159);
 }
 /**/
 
 /*MAIN*/
+main{
+    width: 100%;
+    box-sizing: border-box;
+}
 .inicio{
     display: flex; /*Sin el flex no se centraría el texto*/
     align-items: center; /*Ordena los elementos de manera vertical central*/
@@ -94,14 +105,15 @@ nav{
 
 /*SOBRE MÍ*/
 #sobremi{
+    width: 100%;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 90vh;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background-color: whitesmoke;
+    box-sizing: border-box;
 }
 .grupo-sobremi{
     text-align: center;
@@ -111,10 +123,10 @@ nav{
     justify-content: space-evenly; /*Separa elementos uniformemente con el mismo espacio entre ellos*/
 }
 .txt-sobremi h2{
-    font-size: 45px;
+    font-size: 40px;
     text-align: center;
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
 }
 .txt-sobremi{
     width: 50%;
@@ -125,41 +137,42 @@ nav{
     justify-content: center;
 }
 .img-sobremi img{ /*CSS para la imagen de sobremi*/
-    width: 350px;
-    height: 400px;
-    border-radius: 5px;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 0.5rem;
 }
 /**/
 
 /*SERVICIOS*/
 #servicios{
+    width: 100%;
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     background-color: rgb(206, 206, 206);
+    box-sizing: border-box;
 }
 .grupo-servicios{
     text-align: center;
 }
 .sup-servicios h2{
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 1.5rem;
     font-size: 40px;
 }
 .cont-servicios{
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 3.15rem;
 }
 .cont-servicios div{
-    width: 400px;
+    width: 25rem;
 }
 .cont-servicios > div h3{
     text-align: center;
     font-size: 25px;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 .cont-servicios > div p{
     text-align: center;
@@ -167,9 +180,9 @@ nav{
     width: 100%;
 }
 .cont-servicios > div img{
-    width: 400px;
-    height: 300px;
-    border-radius: 5px;
+    width: 25rem;
+    height: 18.75rem;
+    border-radius: 0.5rem;
 }
 /**/
 
@@ -181,47 +194,48 @@ nav{
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
+    box-sizing: border-box;
 }
 .sup-proyectos h2{
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 1.5rem;
     font-size: 40px;
 }
 .cont-proyectos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 1.25rem;
 }
 .cont-proyectos h3{
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
     font-size: 25px;
 }
 .cont-proyectos > div img{
-    width: 300px;
-    height: 400px;
+    width: 18.75rem;
+    height: 25rem;
     margin: auto;
     display: block;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 .cont-proyectos p{
+    width: 100%;
     text-align: center;
     font-size: 15px;
-    width: 100%;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 .cont-boton{ /*CSS para los botones de visitar la página*/
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 1.5rem;
 }
 .boton-proyectos{ /*Atributos del botón*/
     background-color: rgb(206, 206, 206);
-    width: 120px;
-    height: 35px;
+    width: 7.5rem;
+    height: 2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     justify-content: center;
 }
 .boton-proyectos:hover{ /*Hover para el botón*/
@@ -238,40 +252,41 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 .sup-contactame h2{
     text-align: center;
     font-size: 40px;
 }
 .cont-contactame{
-    width: 800px;
+    width: 40rem;
     margin: auto;
 }
 .cont-contactame form > fieldset{
-    padding: 15px;
+    padding: 0.95rem;
     background-color: whitesmoke;
     border: none; /*Quita los bordes del input*/
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 .cont-contactame form > fieldset > legend{
     font-size: 22px;
-    padding-top: 50px;
+    padding-top: 3.2rem;
 }
 .cont-form{
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
 }
 .cont-form label{
     display: block; /*Ordena de manera vertica los elementos*/
     font-size: 18px;
-    padding-bottom: 10px;
+    padding-bottom: 0.5rem;
 }
 .cont-form input{
     font-size: 15px;
     width: 98%;
-    height: 32px;
-    border-radius: 3px;
-    padding-left: 10px;
+    height: 2rem;
+    border-radius: 0.5rem;
+    padding-left: 0.7rem;
     border: none; /*Quita los bordes del input*/
     outline: none; /*Quita el borde que se visualiza al hacer click para escribir en el input*/
     background-color: rgb(186, 186, 186);
@@ -279,10 +294,10 @@ nav{
 .cont-form textarea{
     font-size: 15px;
     width: 98%;
-    height: 100px;
-    border-radius: 3px;
-    padding-left: 10px;
-    padding-top: 10px;
+    height: 6.25rem;
+    border-radius: 0.5rem;
+    padding-left: 0.7rem;
+    padding-top: 0.7rem;
     border: none; /*Quita los bordes del areatxt*/
     outline: none; /*Quita el borde que se visualiza al hacer click para escribir en el areatxt*/
     background-color: rgb(186, 186, 186);
@@ -290,11 +305,11 @@ nav{
 /*CSS para elección de opciones*/
 .cont-elegir > div{
     display: block; /*Acomoda el contenido de manera vertical*/
-    padding-bottom: 5px;
+    padding-bottom: 0.32rem;
 }
 .cont-elegir p{
     font-size: 18px;
-    padding-bottom: 10px;
+    padding-bottom: 0.7rem;
 }
 .cont-elegir label{
     font-size: 18px;
@@ -304,15 +319,15 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
 }
 .button{
     background-color: rgb(206, 206, 206);
-    width: 75px;
-    height: 40px;
+    width: 5rem;
+    height: 2.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     font-size: 17px;
     justify-content: center;
 }
@@ -325,34 +340,35 @@ nav{
 /*FOOTER*/
 footer{
     width: 100%;
-    height: 45vh;
+    height: 46vh;
     color: whitesmoke;
     background-color: rgb(49, 49, 49);
+    box-sizing: border-box;
 }
 /*CSS para la parte superior del footer*/ 
 .superior{
     float: right; /*Posición de un elemento a la derecha*/
-    padding-right: 10px;
-    padding-top: 10px;
+    padding-right: 0.7rem;
+    padding-top: 0.7rem;
 }
 .sigueme h3{
     font-size: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 0.7rem;
 }
 .sigueme > div > a{
-    padding-right: 10px;
+    padding-right: 0.7rem;
 }
 .sigueme > div img{
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 /*CSS para la mitad del footer*/ 
 .mitad{
-    padding-left: 10px;
-    padding-top: 100px;
+    padding-left: 0.7rem;
+    padding-top: 6.25rem;
 }
 .mitad div{
-    padding-bottom: 10px;
+    padding-bottom: 0.7rem;
 }
 .mitad > div h3{
     font-size: 22px;
@@ -370,7 +386,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 .inferior > div a{
     font-size: 18px;
@@ -378,3 +394,495 @@ footer{
     color: whitesmoke;
 }
 /**/
+
+/*MEDIA QUERY para ancho de 700px*/
+/*Maneje los font-size en px por recomendación de un video*/
+@media screen and (max-width:700px){
+   body{
+    width: 100%;
+    height: 100%;
+   }
+
+   .contenedor{
+    width: 100%;
+    height: 100%;
+    flex-direction: column; /*Elementos en columnas*/
+   }
+
+   /*MENÚ*/
+   header{
+    height: 7.8125rem;
+   }
+   nav{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+   }
+   .cont-nav{
+    width: 100%;
+    padding-right: 0px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(206, 206, 206);
+   }
+   .menu > li > a{
+    color: black;
+    font-weight: bold; /*Darle negrita a la letra*/
+   }
+   .menu > li > a:hover{
+    color: whitesmoke;
+   }
+   /*Submenu*/
+   .submenu{
+    background-color: rgb(206, 206, 206);
+    width: 8rem;
+   }
+   .submenu > li > a{
+    color: black;
+    font-weight: bold;
+   }
+   .submenu li > a:hover{
+    color: whitesmoke;
+   }
+   /**/
+
+   /*INICIO*/
+   main{
+    width: 100%;
+    height: 70vh;
+   }
+   .inicio{
+    height: 100%;
+   }
+   .txt-inicio h1{
+    font-size: 45px;
+   }
+   .txt-inicio p{
+    font-size: 20px;
+   }
+   /**/
+
+   /*SOBRE MI*/
+   #sobremi{
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+   }
+   .grupo-sobremi{
+    margin: auto;
+   }
+   .cont-sobremi{
+    flex-direction: column;
+   }
+   .img-sobremi img{
+    display: none;
+   }
+   .txt-sobremi{
+    width: 80%;
+    margin: auto;
+    font-size: 15px;
+   }
+   .txt-sobremi h2{
+    font-size: 25px;
+    margin: auto;
+   }
+   /**/
+
+   /*SERVICIOS*/ 
+   #servicios{
+    width: 100%;
+    height: 145vh;
+   }
+   .grupo-servicios{
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+   }
+   .cont-servicios{
+    flex-direction: column;
+   }
+   .cont-servicios > div{
+    width: 100%;
+   }
+   .sup-servicios > h2{
+    font-size: 25px;
+   }
+   .cont-servicios > div > h3{
+    font-size: 18px;
+   }
+   .cont-servicios > div > p{
+    font-size: 15px;
+   }
+   .cont-servicios > div img{
+    width: 50%;
+    height: 50%;
+   }
+   /**/
+
+   /*PROYECTOS*/ 
+   #proyectos{
+    width: 100%;
+    height: 300vh;
+   }
+   .grupo-proyectos{
+    margin: auto;
+    flex-direction: column;
+   }
+   .sup-proyectos > h2{
+    font-size: 25px;
+   }
+   .cont-proyectos{
+    display: flex;
+    flex-direction: column;
+   }
+   .cont-proyectos div{
+    padding-left: 1rem;
+    padding-right: 1rem;
+   }
+   .cont-proyectos > div > h3{
+    font-size: 18px;
+   }
+   .cont-proyectos > div > p{
+    font-size: 15px;
+   }
+   .cont-proyectos > div img{
+    width: 15rem;
+    height: 20rem;
+   }
+   .boton-proyectos{
+    width: 5rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 13px;
+   }
+   /**/
+
+   /*CONTACTAME*/
+   #contactame{
+    width: 100%;
+    height: 150vh;
+   }
+   .grupo-contactame{
+    width: 100%;
+    margin: auto;
+   }
+   .sup-contactame > h2{
+    font-size: 25px;
+   }
+   .cont-contactame{
+    width: 100%
+   }
+   .cont-contactame > form{
+    width: 90%;
+    margin: auto;
+   }
+   .cont-contactame form > fieldset > legend{
+    font-size: 18px;
+   }
+   .cont-form > label{
+    font-size: 15px;
+   }
+   .cont-form > input, textarea{
+    font-size: 12px;
+   }
+   .cont-elegir p{
+    font-size: 15px;
+   }
+   .cont-elegir > div > label{
+    font-size: 12px;
+   }
+   .button-form > a > input{
+    font-size: 13px;
+    width: 5rem;
+    height: 2.2rem;
+   }
+   /**/
+
+   /*FOOTER*/
+   footer{
+    width: 100%;
+    height: 45vh;
+   }
+   .superior{
+    float: left;
+    padding: 1rem;
+   }
+   .sigueme > h3{
+    font-size: 18px;
+   }
+   .sigueme > div > a > img{
+    width: 2rem;
+    height: 2rem;
+   }
+   .mitad{
+    display: flex;
+    float: left;
+    padding: 1rem;
+    gap: 3.5rem;
+    clear: left; /*Ordena los elementos debajo a la izquierda*/
+   }
+   .mitad > div > h3{
+    font-size: 18px;
+   }
+   .mitad > div > p{
+    font-size: 15px;
+   }
+   .mitad > div > a{
+    font-size: 15px;
+   }
+   .mitad div{
+    padding: 0;
+   }
+   .inferior{
+    width: 100%;
+    display: flex;
+    clear: left; 
+    float: left;
+   }
+   .inferior > div > a{
+    font-size: 12px;
+   }
+   /**/
+}
+/**/
+
+/*MEDIA QUERY para ancho de 390px (Tome como referencia el iphone 12 Pro)*/
+/*Las reglas de estilo son básicamente iguales a la anterior, solo cambian algunas medidas*/
+@media screen and (max-width:390px){
+    body{
+     width: 100%;
+     height: 100%;
+    }
+ 
+    .contenedor{
+     width: 100%;
+     height: 100%;
+     flex-direction: column; 
+    }
+ 
+    /*MENU*/
+    header{
+     height: 125px;
+    }
+    nav{
+     width: 100%;
+     height: 100%;
+     flex-direction: column;
+    }
+    .cont-nav{
+     width: 100%;
+     padding-right: 0;
+     font-size: 12px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(206, 206, 206);
+    }
+    .menu > li > a{
+     color: black;
+     font-weight: bold; 
+     padding: 1rem 1rem;
+    }
+    .menu li:hover .submenu{ /*En celular no aparecerá el submenu*/
+        display: none;
+       }
+    /**/
+
+    /*INICIO*/
+    main{
+        width: 100%;
+        height: 50vh;
+    }
+    .inicio{
+        height: 100%;
+    }
+    .txt-inicio h1{
+        font-size: 40px;
+    }
+    .txt-inicio p{
+        font-size: 18px;
+    }
+    /**/
+ 
+    /*SOBRE MI*/
+    #sobremi{
+     width: 100%;
+     height: 40vh;
+     padding: 0;
+    }
+    .grupo-sobremi{
+     margin: auto;
+    }
+    .cont-sobremi{
+     flex-direction: column;
+    }
+    .img-sobremi img{
+     display: none;
+    }
+    .txt-sobremi{
+     width: 80%;
+     margin: auto;
+     font-size: 15px;
+    }
+    .txt-sobremi h2{
+     font-size: 25px;
+     margin: auto;
+    }
+    /**/
+ 
+    /*SERVICIOS*/ 
+    #servicios{
+     width: 100%;
+     height: 75vh;
+    }
+    .grupo-servicios{
+     width: 100%;
+     margin: auto;
+     flex-direction: column;
+    }
+    .cont-servicios{
+     flex-direction: column;
+    }
+    .sup-servicios > h2{
+     font-size: 25px;
+    }
+    .cont-servicios > div > h3{
+     font-size: 18px;
+    }
+    .cont-servicios > div > p{
+     font-size: 15px;
+    }
+    .cont-servicios > div img{
+     width: 50%;
+     height: 50%;
+    }
+    /**/
+ 
+    /*PROYECTOS*/ 
+    #proyectos{
+     width: 100%;
+     height: 200vh;
+    }
+    .grupo-proyectos{
+     margin: auto;
+     flex-direction: column;
+    }
+    .sup-proyectos > h2{
+     font-size: 25px;
+    }
+    .cont-proyectos{
+     display: flex;
+     flex-direction: column;
+    }
+    .cont-proyectos div{
+     padding-left: 1rem;
+     padding-right: 1rem;
+    }
+    .cont-proyectos > div > h3{
+     font-size: 18px;
+    }
+    .cont-proyectos > div > p{
+     font-size: 15px;
+    }
+    .cont-proyectos > div img{
+     width: 15rem;
+     height: 20rem;
+    }
+    .boton-proyectos{
+     width: 5rem;
+     height: 2.5rem;
+     text-align: center;
+     font-size: 13px;
+    }
+    /**/
+ 
+    /*CONTACTAME*/
+    #contactame{
+     width: 100%;
+     height: 95vh;
+    }
+    .grupo-contactame{
+     width: 100%;
+     margin: auto;
+    }
+    .sup-contactame > h2{
+     font-size: 25px;
+    }
+    .cont-contactame{
+     width: 100%
+    }
+    .cont-contactame > form{
+     width: 90%;
+     margin: auto;
+    }
+    .cont-contactame form > fieldset > legend{
+     font-size: 18px;
+    }
+    .cont-form > label{
+     font-size: 15px;
+    }
+    .cont-form > input, textarea{
+     font-size: 12px;
+    }
+    .cont-elegir p{
+     font-size: 15px;
+    }
+    .cont-elegir > div > label{
+     font-size: 12px;
+    }
+    .button-form > a > input{
+     font-size: 13px;
+     width: 5rem;
+     height: 2.2rem;
+    }
+    /**/
+ 
+    /*FOOTER*/
+    footer{
+     width: 100%;
+     height: 60vh;
+    }
+    .superior{
+     float: left;
+     padding: 1rem;
+    }
+    .sigueme > h3{
+     font-size: 15px;
+    }
+    .sigueme > div > a > img{
+     width: 2rem;
+     height: 2rem;
+    }
+    .mitad{
+     display: flex;
+     float: left;
+     padding: 1rem;
+     gap: 3.5rem;
+     clear: left; 
+    }
+    .mitad > div > h3{
+     font-size: 15px;
+    }
+    .mitad > div > p{
+     font-size: 12px;
+    }
+    .mitad > div > a{
+     font-size: 12px;
+    }
+    .mitad div{
+     padding: 0;
+    }
+    .inferior{
+     width: 100%;
+     display: flex;
+     clear: left;
+     float: left;
+    }
+    .inferior > div > a{
+     font-size: 10px;
+    }
+    /**/
+ }
+ /**/
